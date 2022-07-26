@@ -28,7 +28,7 @@ exports.getListBook = async (req, res) => {
   
           author = author.slice(0, -1);
   
-          image = data.volumeInfo.imageLinks.thumbnail;
+          image = data.volumeInfo.imageLinks?.thumbnail;
   
           rating = data.volumeInfo.averageRating ? data.volumeInfo.averageRating : 0;
   
