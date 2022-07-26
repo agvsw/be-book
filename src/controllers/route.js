@@ -11,7 +11,7 @@ exports.routesConfig = function (app) {
       FavoriteBookController.getAll
     ]);
 
-    app.get('/favorites', [
+    app.get('/books', [
       BookController.getListBook
     ]);
 };
