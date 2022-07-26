@@ -22,7 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     title: DataTypes.STRING,
     author: DataTypes.STRING,
-    image: DataTypes.STRING
+    image: DataTypes.STRING,
+    rating: DataTypes.DOUBLE,
   }, {
     sequelize,
     modelName: 'FavoriteBook',
