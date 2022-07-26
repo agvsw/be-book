@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import BookRouter from './src/controllers/route'
 
 const app = Express();
-const port = 3000;
+const port = 3001;
 
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(bodyParser.json({limit: '30mb', extended: true}));
@@ -23,5 +23,5 @@ app.use(function (req, res, next) {
 BookRouter.routesConfig(app);
 
 
-app.listen(process.env.PORT | port, () => console.log(`App listening on port ${port}`));
+app.listen(process.env.PORT || port, () => console.log(`App listening on port ${port}`));
 
