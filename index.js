@@ -23,5 +23,5 @@ app.use(function (req, res, next) {
 BookRouter.routesConfig(app);
 
 
-app.listen(port, () => console.log(`App listening on port ${port}`));
+app.listen(process.env.PORT | port, () => console.log(`App listening on port ${port}`));
 
