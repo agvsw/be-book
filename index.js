@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import BookRouter from './src/controllers/route'
 
 const app = Express();
-const port = 3333;
+const port = 80;
 
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(bodyParser.json({limit: '30mb', extended: true}));
