@@ -16,14 +16,24 @@
     "password": "fd2ef5bd543648f0e9684dc86de595e8e0a5a3c1c08b22c1130b8f91eef0c1e6",
     "database": "d9ge47uqsjk29s",
     "host": "ec2-107-22-122-106.compute-1.amazonaws.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": { 
+      "options": {
+        "encrypt": true
+      }
+    }
   },
   "production": {
     "username": "sjrufkthaaalqp",
     "password": "fd2ef5bd543648f0e9684dc86de595e8e0a5a3c1c08b22c1130b8f91eef0c1e6",
     "database": "d9ge47uqsjk29s",
     "host": "ec2-107-22-122-106.compute-1.amazonaws.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": { 
+      "options": {
+        "encrypt": true
+      }
+    }
   }
 }
 
